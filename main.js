@@ -64,4 +64,6 @@ class Movie extends Media {
     get runtime() {
         return this._runtime;
     }
-}
+};
+
+const historyOfEverything = new Book('A Short History of Nearly Everything', 'Bill Bryson', 544);
