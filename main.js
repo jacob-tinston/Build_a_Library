@@ -1,1 +1,3 @@
-class Media {};
+class Media {
+    constructor(param){}
+};
