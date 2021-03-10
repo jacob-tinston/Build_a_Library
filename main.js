@@ -26,7 +26,7 @@ class Media {
     }
 
     getAverageRating() {
-        return (this._ratings.reduce((currentSum, rating) => currentSum + rating, 0)) / this._ratings.length();
+        return (this._ratings.reduce((currentSum, rating) => currentSum + rating, 0)) / this._ratings.length;
     }
 
     addRating(newRating) {
@@ -67,3 +67,9 @@ class Movie extends Media {
 };
 
 const historyOfEverything = new Book('A Short History of Nearly Everything', 'Bill Bryson', 544);
+historyOfEverything.toggleCheckoutStatus();
+console.log(historyOfEverything.isCheckedOut);
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+console.log(historyOfEverything.getAverageRating());
