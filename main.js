@@ -24,4 +24,8 @@ class Media {
     toggleCheckoutStatus() {
         this._isCheckedOut = !this._isCheckedOut;
     }
+
+    getAverageRating() {
+        return (this._ratings.reduce((currentSum, rating) => currentSum + rating, 0)) / this._ratings.length();
+    }
 };
