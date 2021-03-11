@@ -17,7 +17,7 @@ It uses Object-Oriented-Programming and classes to create an online library.
 * Javascript
 
 ## Status
-Project is: _in-progress_
+Project is: _finished_
 
 ## Contact
 Created by: Jacob  <br/>
